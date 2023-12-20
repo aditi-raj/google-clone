@@ -6,6 +6,12 @@ const suggBox = searchWrapper.querySelector(".autocom-box");
 // let linkTag = searchWrapper.querySelector("a");
 // let webLink;
 
+document.getElementById("searchTerm").addEventListener("focus", function () {
+    var elementToMove = document.getElementById("button");
+    var newContainer = document.getElementById("search");
+    newContainer.appendChild(elementToMove);
+});
+
 // if user press any key and release
 inputBox.onkeyup = (e) => {
     let userData = e.target.value; //user enetered data
@@ -66,5 +72,8 @@ document.addEventListener("click", function (event) {
         // logic to close the autocomplete box
         // $(searchInput).autocomplete("close");
         searchWrapper.classList.remove("active");
+        var elementToMove = document.getElementById("button");
+        var oldContainer = document.getElementById("form_id");
+        oldContainer.appendChild(elementToMove);
     }
 });

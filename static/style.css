@@ -90,6 +90,9 @@ body {
     padding-left: 10px;
     margin-top: -45px;
 }
+.search_input:hover {
+    box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.5);
+}
 
 .search_input .autocom-box {
     padding: 0;
@@ -142,14 +145,14 @@ button {
     border: 1px solid transparent;
     margin: 5px;
     padding: 8px 12px;
-    background-color: #e4e2e2;
+    background-color: #f8f9fa;
     border-radius: 5px;
 }
 button:hover {
     outline-style: solid;
     outline-color: rgb(194, 193, 193);
     outline-width: 1px;
-    box-shadow: 0 0 2px 1px rgba(189 189 189 0.5);
+    box-shadow: 0 0 2px 1px rgba(221, 221, 221, 0.5);
     cursor: pointer;
 }
 
